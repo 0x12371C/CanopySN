@@ -3,10 +3,10 @@
 ## 🌐 Introduction
 Welcome to **Canopy**, a new blockchain subnet developed using Avalanche's advanced subnet technology. Our mission is to innovate within the DeFi landscape by providing a resilient, decentralized, and scalable platform capable of supporting a diverse range of financial tools and applications.
 
-![GitHub stars](https://img.shields.io/github/stars/yourusername/Canopy?style=social)
-![GitHub forks](https://img.shields.io/github/forks/yourusername/Canopy?style=social)
-![GitHub watchers](https://img.shields.io/github/watchers/yourusername/Canopy?style=social)
-![GitHub followers](https://img.shields.io/github/followers/yourusername?style=social)
+![GitHub stars](https://github.com/0x12371C/CanopySN/tree/main)
+![GitHub forks](https://github.com/0x12371C/CanopySN/tree/main)
+![GitHub watchers](https://github.com/0x12371C/CanopySN/tree/main)
+![GitHub followers](https://github.com/0x12371C/CanopySN/tree/main)
 
 ## ✨ Features
 - **DeFi Toolkit**: Explore our suite of DeFi tools including a decentralized exchange, lending protocols, and innovative stablecoins.
