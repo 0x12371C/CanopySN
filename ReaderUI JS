@@ -1,0 +1,70 @@
+// ui.js
+const searchInput = document.getElementById('searchInput');
+const searchButton = document.getElementById('searchButton');
+const latestBlockDetails = document.getElementById('latestBlockDetails');
+const transactionInfo = document.getElementById('transactionInfo');
+
+async function displayLatestBlock() {
+    const latestBlockNumber = await getLatestBlockNumber();
+    const block = await getBlockDetails(latestBlockNumber);
+    
+    latestBlockDetails.innerHTML = `
+        <p>Block Number: ${block.blockNumber}</p>
+        <p>Block Hash: ${block.blockHash}</p>
+        <p>Parent Hash: ${block.parentHash}</p>
+        <p>Timestamp: ${new Date(block.timestamp * 1000).toLocaleString()}</p>
+        <p>Transactions: ${block.transactionHashes.length}</p>
+    `;
+}
+
+async function searchBlock() {
+    const searchTerm = searchInput.value.trim();
+
+    if (searchTerm === '') {
+        alert('Please enter a block number or transaction hash.');
+        return;
+    }
+
+    try {
+        const blockNumber = parseInt(searchTerm);
+        if (!isNaN(blockNumber)) {
+            const block = await getBlockDetails(blockNumber);
+            displayBlockDetails(block);
+        } else {
+            const transaction = await getTransactionDetails(searchTerm);
+            displayTransactionDetails(transaction);
+        }
+    } catch (error) {
+        console.error('Error searching:', error);
+        alert('Invalid block number or transaction hash.');
+    }
+}
+
+function displayBlockDetails(block) {
+    latestBlockDetails.innerHTML = `
+        <p>Block Number: ${block.blockNumber}</p>
+        <p>Block Hash: ${block.blockHash}</p>
+        <p>Parent Hash: ${block.parentHash}</p>
+        <p>Timestamp: ${new Date(block.timestamp * 1000).toLocaleString()}</p>
+        <p>Transactions: ${block.transactionHashes.length}</p>
+    `;
+}
+
+function displayTransactionDetails(transaction) {
+    transactionInfo.innerHTML = `
+        <p>Transaction Hash: ${transaction.transactionHash}</p>
+        <p>From: ${transaction.from}</p>
+        <p>To: ${transaction.to}</p>
+        <p>Value: ${transaction.value}</p>
+        <p>Gas Limit: ${transaction.gasLimit}</p>
+        <p>Gas Price: ${transaction.gasPrice}</p>
+        <p>Nonce: ${transaction.nonce}</p>
+        <p>Data: ${transaction.data}</p>
+    `;
+}
+
+// Event listeners
+searchButton.addEventListener('click', searchBlock);
+
+// Display the latest block on page load
+displayLatestBlock();
