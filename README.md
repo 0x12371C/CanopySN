@@ -22,6 +22,30 @@ $CNPY is the native token of the Canopy ecosystem, serving as a means of value e
 
 ## 🛠️ Technical Architecture
 
+Autonomous Liquidity Engine
+
+Canopy is an innovative liquidity engine designed to transform decentralized finance (DeFi) by leveraging Avalanche's advanced blockchain technology. Our platform combines strategic liquidity management, a hybrid consensus model, and a community-driven governance structure to offer a robust and scalable DeFi solution.
+
+Key Features
+Strategic Liquidity Accumulation
+Bond Sales: Users can purchase $CNPY tokens via bond sales, providing Canopy with capital to ensure liquidity and support operations.
+Protocol-Owned Liquidity: Utilizing proceeds from bond sales to directly add liquidity, enhancing market stability and user transactions.
+Enhanced Liquidity with sAVAX
+sAVAX Utilization: A significant portion of our liquidity is held in sAVAX, allowing us to leverage it to borrow additional AVAX. This approach enhances liquidity without sacrificing staking rewards.
+Risk Management: We implement comprehensive risk management strategies to safeguard against market volatility and protect our leveraged positions.
+Governance and Community Engagement
+Decentralized Governance: Canopy employs a DAO for governance, ensuring $CNPY holders have a voice in key operational decisions.
+Transparency and Regular Reporting: Commitment to regular disclosures on liquidity, treasury management, and governance actions.
+Incentive Structures
+Liquidity Provider Incentives: Early liquidity providers receive incentives, transitioning to protocol-owned liquidity for sustainability.
+Competitive Staking Rewards: Users staking $CNPY receive attractive returns, fostering long-term engagement and investment.
+Security and Compliance
+Regular Security Audits and Bug Bounties: To ensure platform integrity and protect user assets.
+Regulatory Compliance: Adhering to relevant financial regulations to maintain operational legality and integrity.
+User Experience
+User-Friendly Interfaces: Designed to ensure ease of use regardless of user expertise, enhancing overall platform interaction.
+Educational Resources: Comprehensive guides and resources to educate users about blockchain technology and DeFi practices.
+
 - **🔀 Chain Controlled Liquidity (CCL):** A novel liquidity management model that automates liquidity provisioning using smart contracts and real-time data.
 
 - **🔗 Evergreen Subnets:** Scalable and customizable infrastructure tailored for Canopy's DeFi ecosystem, enabling fast transaction processing and efficient resource utilization.
